@@ -1,3 +1,29 @@
-<iframe width="100%" height="100%" class="responsive-iframe" frameBorder="0" scrolling="no"
-    src="https://script.google.com/macros/s/AKfycbxQjlasdEG3T6W5FRWJRWJPR8VmhnpLy1LjJ4F-idh8uv4LlnBNGvRUPfyWSE2X1QC8bQ/exec">
-</iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This sets the browser tab title -->
+    <title>APVC</title>
+    <style>
+        /* Optional: Make the iframe truly fill the page without scrollbars */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars on the body */
+        }
+        iframe {
+            display: block; /* Removes potential extra space below */
+            width: 100%;
+            height: 100%;
+            border: none; /* Better than frameBorder="0" */
+        }
+    </style>
+</head>
+<body>
+    <iframe class="responsive-iframe"
+        src="https://script.google.com/macros/s/AKfycbxQjlasdEG3T6W5FRWJRWJPR8VmhnpLy1LjJ4F-idh8uv4LlnBNGvRUPfyWSE2X1QC8bQ/exec">
+    </iframe>
+</body>
+</html>
