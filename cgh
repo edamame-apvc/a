@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paragon Traders</title>
+    
+    <link rel="icon" type="https://cdn-icons-png.flaticon.com/512/2669/2669169.png">
+    
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+        }
+        iframe {
+            display: block; 
+            width: 100%;
+            height: 100%;
+            border: none; 
+        }
+    </style>
+</head>
+<body>
+    <iframe class="responsive-iframe" allow="clipboard-read; clipboard-write"
+        src="https://script.google.com/macros/s/AKfycby5-Ir79PGa0_55_jSb77Fa983zSCgIOmYmpsgmKTYa_5bP0VAc55Gue4kBqZDLsY8/exec">
+    </iframe>
+</body>
+</html>
