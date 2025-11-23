@@ -24,8 +24,24 @@
     </style>
 </head>
 <body>
-    <iframe class="responsive-iframe" allow="clipboard-read; clipboard-write"
-        src="https://script.google.com/macros/s/AKfycbyQGnlCj1ylminvo-5mg9PyQGDW1nmiKfgEPvaDDY5PVoGPedl5f7TZWr6d0_7HVSWY/exec">
-    </iframe>
+    <iframe id="gas-app-iframe" class="responsive-iframe" allow="clipboard-read; clipboard-write"></iframe>
+
+    <script>
+      const baseAppUrl = "https://script.google.com/macros/s/AKfycbyQGnlCj1ylminvo-5mg9PyQGDW1nmiKfgEPvaDDY5PVoGPedl5f7TZWr6d0_7HVSWY/exec";
+
+      const hash = window.location.hash;
+
+      let finalAppUrl = baseAppUrl;
+
+      if (hash === '#settings') {
+        finalAppUrl = baseAppUrl + "?openTab=settings";
+        
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      }
+
+      const iframe = document.getElementById('gas-app-iframe');
+      iframe.src = finalAppUrl;
+    </script>
+
 </body>
 </html>
