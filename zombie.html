@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Z-virus</title>
+    <title>Z-Virus Outbreak</title>
+    
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/256/5190/5190594.png">
     
     <style>
         html, body {
@@ -22,24 +24,8 @@
     </style>
 </head>
 <body>
-    <iframe id="gas-app-iframe" class="responsive-iframe" allow="clipboard-read; clipboard-write"></iframe>
-
-    <script>
-      const baseAppUrl = "https://script.google.com/macros/s/AKfycbwikslxuF4GhwYxa4hcDGUx2hwEJ77Wl-UNxkbWEHoCzqqaUhuBc49JjKxV2qL8c6JZ/exec";
-
-      const hash = window.location.hash;
-
-      let finalAppUrl = baseAppUrl;
-
-      if (hash === '#settings') {
-        finalAppUrl = baseAppUrl + "?openTab=settings";
-        
-        history.pushState("", document.title, window.location.pathname + window.location.search);
-      }
-
-      const iframe = document.getElementById('gas-app-iframe');
-      iframe.src = finalAppUrl;
-    </script>
-
+    <iframe class="responsive-iframe" allow="clipboard-read; clipboard-write"
+        src="https://script.google.com/macros/s/AKfycbwikslxuF4GhwYxa4hcDGUx2hwEJ77Wl-UNxkbWEHoCzqqaUhuBc49JjKxV2qL8c6JZ/exec">
+    </iframe>
 </body>
 </html>
